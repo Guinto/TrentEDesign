@@ -2,19 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trent Ellingsen Design</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap-responsive.min.js" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/index.css" />
 
-<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/github.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		GitHub.setup();	
+	});
+	
+	function load() {
+		GitHub.addRecentProjectsToSelector('#githubList');
+	}
+</script>
+
 </head>
-<body>
-	<div class="container">
+<body onLoad="load()">
+	<div id="logo">
+		<img src="img/logo.png" title="Designed by Trent Ellingsen"></img>
+	</div>
+	<div id="content">
 		<div class="row">
-			<h1>Trent Ellingsen Design</h1>
+			<div class="span3">
+				<div class="well sidebar-nav">
+				<ul class="nav nav-list">
+					<li class="nav-header">Highlighted Projects
+					<a href="http://photofloof.com" title="iPhone app inspired by asian photo booths">Photo Floof</a>
+					</li>
+					<li class="nav-header">Websites
+						<a href="http://ellingsenestates.com" title="Luxury vacation rental homes">Ellingsen Estates</a>
+					</li>
+					<li id="githubList" class="nav-header">Top GitHub Projects</li>
+				</ul>
+			</div>
+			</div>
+			<div class="span9">
+				<h1>Projects</h1>
+			</div>
 		</div>
 	</div>
 </body>

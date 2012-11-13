@@ -16,9 +16,9 @@
 
 <script type="text/javascript">
 	$(function() {
-		GitHub.setup();	
+		GitHub.setup();
 	});
-	
+
 	function load() {
 		GitHub.addRecentProjectsToSelector('#githubList');
 	}
@@ -29,27 +29,29 @@
 	<div id="logo">
 		<img src="img/logo.png" title="Designed by Trent Ellingsen"></img>
 	</div>
-	<div id="content">
+	<div id="content" class="container">
 		<div class="row">
+			<div class="span9">
+				<div class="well">
+					<h1>Projects</h1>
+				</div>
+			</div>
 			<div class="span3">
 				<div class="well sidebar-nav">
-				<ul class="nav nav-list">
-					<li class="nav-header">Highlighted Projects
-					<a href="http://photofloof.com" title="iPhone app inspired by asian photo booths">Photo Floof</a>
-					</li>
-					<li class="nav-header">Websites
-						<a href="http://ellingsenestates.com" title="Luxury vacation rental homes">Ellingsen Estates</a>
-					</li>
-					<li class="nav-header">
-						<a class="nav-header" href="#">Poster Designs
-						<a href="desgin.html" title="Poster designs">ZME</a>
-					</li>
-					<li id="githubList" class="nav-header">Top GitHub Projects</li>
-				</ul>
-			</div>
-			</div>
-			<div class="span9">
-				<h1>Projects</h1>
+					<ul class="nav nav-list">
+						<li class="nav-header">Highlighted Projects <a
+							href="http://photofloof.com"
+							title="iPhone app inspired by asian photo booths">Photo Floof</a>
+						</li>
+						<li class="nav-header">Websites <a
+							href="http://ellingsenestates.com"
+							title="Luxury vacation rental homes">Ellingsen Estates</a>
+						</li>
+						<li class="nav-header"><a class="nav-header" href="#">Poster
+								Designs</a> <a href="desgin.html" title="Poster designs">ZME</a></li>
+						<li id="githubList" class="nav-header">Top GitHub Projects</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

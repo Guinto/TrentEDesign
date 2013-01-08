@@ -1,0 +1,48 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F7F7F7;
+}
+
+.main-navigation {
+	margin: 2rem 0;
+}
+
+.main-navigation li {
+	margin: 0.5rem auto;
+	font-size: 1.125rem;
+}
+
+header {
+	background-color: #002266;
+	height: 100%;
+	width: 25%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	text-align: center;
+	padding: 2rem 3rem;
+}
+
+header .credits {
+	color: #AAA;
+	font-size: 0.725rem;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 2.5rem;
+}
+
+.content {
+	width: 70%;
+	padding-top: 2rem;
+}
+
+article {
+	width: 90%;
+	max-width: 45rem;
+	margin: 0 auto 1rem auto;
+}

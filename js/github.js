@@ -18,7 +18,8 @@ GitHub.addRecentProjectsToSelector = function(selector) {
 		
 		var recent = (new Date(link.lastUpdated) > prevMonth);
 		if (recent) {
-			$(selector).append('<a href="' + link.url + '" title="' + link.description + '">' + link.name + '</a>');
+			var $githubLinks = $('<a href="' + link.url + '" title="' + link.description + '">' + link.name + '</a>').hide();
+			$githubLinks.appendTo($(selector)).slideDown();
 		}
 	});
 };

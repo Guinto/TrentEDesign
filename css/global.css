@@ -8,6 +8,11 @@ body {
 	background-color: #F7F7F7;
 }
 
+.well {
+	border-style: solid;
+	border-bottom: thick solid #385D6C;
+}
+
 .main-navigation {
 	margin: 2rem 0;
 }
@@ -18,7 +23,7 @@ body {
 }
 
 header {
-	background-color: #002266;
+	background-color: #082D3C;
 	height: 100%;
 	width: 25%;
 	position: fixed;
@@ -26,6 +31,16 @@ header {
 	right: 0;
 	text-align: center;
 	padding: 2rem 3rem;
+}
+
+h2 a {
+	color: #333;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	color: #08C;
+	text-decoration: none;
 }
 
 header .credits {

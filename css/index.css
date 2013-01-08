@@ -9,14 +9,17 @@ body {
 	border-radius: 0;
 }
 
-#logo {
+header {
 	background-color: #222;
-	padding: 20px;
+	height: 100%;
+	width: 30%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	text-align: center;
 }
 
-#logo img {
-	margin-left: 10px;
-}
-
-#content {
+.content {
+	width: 70%;
+	padding-top: 2rem;
 }

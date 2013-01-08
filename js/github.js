@@ -34,10 +34,25 @@ GitHub.setupPublicRepoList = function() {
 		url: url,
 		dataType: "jsonp",
 		success: function(response) {
-			var data = response.data; 
+			var data = response.data;
+			console.log(data);
 			for (var i = 0; i < data.length; i++) {
 				GitHub.links.push(new Project(data[i]));
+				GitHub.getReadme(data[i].id);
 			}
+		}
+	});
+};
+
+GitHub.getReadme = function(repoID) {
+	var url = "https://api.github.com/repos/guinto/" + repoID + "/readme";
+	console.log(url);
+	$.ajax({
+		url: url,
+		dataType: "jsonp",
+		success: function(response) {
+			var data = response.data; 
+			console.log(data);
 		}
 	});
 };

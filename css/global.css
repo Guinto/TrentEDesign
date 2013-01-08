@@ -10,7 +10,7 @@ body {
 
 .well {
 	border-style: solid;
-	border-bottom: thick solid #385D6C;
+	border-bottom: 0.325rem solid #587D8C;
 }
 
 .main-navigation {
@@ -20,6 +20,15 @@ body {
 .main-navigation li {
 	margin: 0.5rem auto;
 	font-size: 1.125rem;
+}
+
+.main-navigation li a {
+	color: #587D8C;
+}
+
+.main-navigation h6 {
+	font-size: 
+	line-height: 5px;
 }
 
 header {

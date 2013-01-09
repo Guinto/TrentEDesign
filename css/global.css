@@ -8,11 +8,6 @@ body {
 	background-color: #F7F7F7;
 }
 
-.well {
-	border-style: solid;
-	border-bottom: 0.325rem solid #587D8C;
-}
-
 .main-navigation {
 	margin: 2rem 0;
 }
@@ -27,8 +22,13 @@ body {
 }
 
 .main-navigation h6 {
-	font-size: 
+	font-size: 11px;
 	line-height: 5px;
+}
+
+.main-navigation .well {
+	border-style: solid;
+	border-bottom: 0.325rem solid #587D8C;
 }
 
 header {
@@ -60,12 +60,12 @@ header .credits {
 	left: 2.5rem;
 }
 
-.content {
-	width: 70%;
+#projects {
+	width: 75%;
 	padding-top: 2rem;
 }
 
-article {
+#projects div {
 	width: 90%;
 	max-width: 45rem;
 	margin: 0 auto 1rem auto;
